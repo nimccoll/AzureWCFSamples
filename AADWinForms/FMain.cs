@@ -116,6 +116,7 @@ namespace AADWinForms
             lblUserName.Text = $"Hello {_userName}!";
             btnSignIn.Enabled = false;
             btnCallService.Enabled = true;
+            btnSupervisorSignIn.Enabled = true;
         }
 
         private void btnCallService_Click(object sender, EventArgs e)
@@ -125,6 +126,12 @@ namespace AADWinForms
             client.ClientCredentials.UserName.UserName = _userName;
             client.ClientCredentials.UserName.Password = _accessToken;
             lblWCFResults.Text = client.GetData(10);
+        }
+
+        private void btnSupervisorSignIn_Click(object sender, EventArgs e)
+        {
+            FSupervisorLogin frmSupervisorLogin = new FSupervisorLogin();
+            frmSupervisorLogin.ShowDialog();
         }
     }
 }

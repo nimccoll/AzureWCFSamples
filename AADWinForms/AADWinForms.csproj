@@ -71,10 +71,19 @@
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FSupervisorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSupervisorLogin.Designer.cs">
+      <DependentUpon>FSupervisorLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSupervisorLogin.resx">
+      <DependentUpon>FSupervisorLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

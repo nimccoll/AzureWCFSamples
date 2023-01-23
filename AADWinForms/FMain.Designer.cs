@@ -38,6 +38,7 @@ namespace AADWinForms
             this.btnCallService = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblWCFResults = new System.Windows.Forms.Label();
+            this.btnSupervisorSignIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSignIn
@@ -124,11 +125,23 @@ namespace AADWinForms
             this.lblWCFResults.Size = new System.Drawing.Size(0, 25);
             this.lblWCFResults.TabIndex = 8;
             // 
+            // btnSupervisorSignIn
+            // 
+            this.btnSupervisorSignIn.Enabled = false;
+            this.btnSupervisorSignIn.Location = new System.Drawing.Point(924, 332);
+            this.btnSupervisorSignIn.Name = "btnSupervisorSignIn";
+            this.btnSupervisorSignIn.Size = new System.Drawing.Size(200, 100);
+            this.btnSupervisorSignIn.TabIndex = 9;
+            this.btnSupervisorSignIn.Text = "Supervisor Sign In";
+            this.btnSupervisorSignIn.UseVisualStyleBackColor = true;
+            this.btnSupervisorSignIn.Click += new System.EventHandler(this.btnSupervisorSignIn_Click);
+            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1254, 953);
+            this.Controls.Add(this.btnSupervisorSignIn);
             this.Controls.Add(this.lblWCFResults);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCallService);
@@ -157,6 +170,7 @@ namespace AADWinForms
         private System.Windows.Forms.Button btnCallService;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblWCFResults;
+        private System.Windows.Forms.Button btnSupervisorSignIn;
     }
 }
 
